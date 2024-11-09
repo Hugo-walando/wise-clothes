@@ -14,6 +14,7 @@ export default {
         foreground: 'hsl(var(--foreground))',
         landing_gradient_brown: '#d8c9b5',
         landing_gradient_blue: '#c7e0e6',
+        bg_nav: '#D5E5E9',
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',

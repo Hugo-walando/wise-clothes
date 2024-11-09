@@ -78,3 +78,23 @@ h1 {
 big-text {
   font-size: 6rem;
 }
+
+.glass-text {
+  font-size: 96px;
+  /* Taille du texte, ajuste selon tes besoins */
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+  /* Couleur blanche avec un peu de transparence */
+  position: relative;
+  z-index: 1;
+
+  /* Effet de verre derrière le texte */
+  background: rgba(255, 255, 255, 0.1);
+  /* Couleur blanche semi-transparente */
+  backdrop-filter: blur(10px);
+  /* Effet de flou pour le verre */
+  -webkit-backdrop-filter: blur(10px);
+  /* Support pour Safari */
+  padding: 20px;
+  border-radius: 12px;
+}
