@@ -17,9 +17,9 @@ export default function Home() {
       />
       <section className='h-screen w-full flex flex-col justify-end bg-gradient-to-b to-landing_gradient_brown from-landing_gradient_blue'>
         <h1 className='w-full text-7xl lg:text-9xl max-w-[300px] px-2 lg:px-0 text-left lg:left-10 top-36 absolute lg:max-w-[500px] lg:leading-[100px]'>
-          Begin the new chapter of Fashion
+          Digital Fashion is <br /> a new chapter
         </h1>
-        <div className='hidden sm:block sm:w-full flex justify-center absolute top-24 sm:top-0 h-[80vh] sm:h-full'>
+        <div className='hidden sm:w-full sm:flex justify-center absolute top-0 h-full'>
           <Image
             src={hoody}
             alt='hoody'
