@@ -76,7 +76,7 @@
   }
 
   .big-text {
-    @apply text-5xl sm:text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl leading-[40px] sm:leading-[50px] md:leading-[60px] lg:leading-[72px] 2xl:leading-[95px];
+    @apply text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[40px] sm:leading-[50px] lg:leading-[55px] xl:leading-[72px];
   }
 }
 

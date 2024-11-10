@@ -47,26 +47,26 @@ export default function Home() {
           y={-1}
           className='absolute inset-0'
         />
-        <div className='flex flex-col items-center md:flex-row md:justify-between md:items-end gap-4 lg:gap-10 pt-20 md:pt-40 pb-20  '>
-          <div className='w-[300px] sm:w-[400px] md:w-[450px] xl:w-[550px] h-[400px] sm:h-[500px] md:h-[600px]  2xl:h-[700px] order-2 md:order-1 z-20'>
+        <div className='flex flex-col items-center md:flex-row md:justify-between md:items-end gap-4 lg:gap-10 pt-20 md:pt-40 pb-20 max-w-[1600px] '>
+          <div className='w-[250px] sm:w-[300px] lg:w-[400px] xl:w-[500px] h-[400px] sm:h-[400px] lg:h-[500px] xl:h-[600px] order-2 md:order-1 z-20'>
             <Image
               src={chromeHoody}
               alt='hoody'
               className='w-full object-cover h-full'
             />
           </div>
-          <div className='flex flex-col md:w-[60%] max-w-[700px] z-10 order-1 md:order-2'>
-            <div className='flex py-4 md:py-10'>
-              <div className='rounded-full ml-12 md:ml-0 bg-col_green_primary w-14 h-14 md:w-20 md:h-20 z-10 flex items-center justify-center'>
-                <ArrowDownRight className='w-10 h-10 md:w-14 md:h-14' />
+          <div className='flex flex-col md:max-w-[50%] z-10 order-1 md:order-2'>
+            <div className='flex py-4 md:py-16'>
+              <div className='rounded-full ml-12 md:ml-0 bg-col_green_primary w-14 h-14 lg:w-20 lg:h-20 z-10 flex items-center justify-center'>
+                <ArrowDownRight className='w-10 h-10 lg:w-14 lg:h-14' />
               </div>
               <span></span>
             </div>
-            <div className='text-center md:text-left mb-4 md:mb-0 px-2 md:px-0'>
+            <div className='text-center md:text-left mb-4 md:mb-0 px-2 md:px-0 '>
               <span className='roboto text-lg font-medium text-col_light_grey '>
                 About Wise
               </span>
-              <h2 className='big-text font-medium pt-6 text-col_light_grey '>
+              <h2 className='big-text font-medium pt-10 text-col_light_grey '>
                 We are a digital fashion house{' '}
                 <span className='text-col_dark_grey'>
                   that mixes technology and creativity
