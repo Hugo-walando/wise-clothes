@@ -18,7 +18,7 @@ const Navbar = () => {
         WISE
       </Link>
 
-      <div className='md:hidden z-20'>
+      <div className='md:hidden bg-white bg-opacity-30 backdrop-blur p-2 rounded-full z-20'>
         <button
           onClick={() => setIsOpen(!isOpen)}
           className={`rounded-full p-2 focus:outline-none`}
@@ -39,18 +39,25 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
-      <div className='flex gap-3'>
-        <ul className='bg-white  flex gap-6 rounded-full px-4 py-4 bg-opacity-30 backdrop-blur-sm'>
+      <div
+        className={`${
+          isOpen ? 'translate-x-0' : 'translate-x-[-1000px]'
+        }  md:flex gap-3 bg-white md:translate-x-0 bg-opacity-40 md:bg-transparent transition-transform duration-500 ease-in-out backdrop-blur-sm md:backdrop-blur-none absolute md:static left-0 w-full h-screen md:w-auto md:h-auto top-0 py-16 md:p-0 z-10 px-20 md:px-0`}
+      >
+        <ul className='md:bg-white md:flex gap-6 md:rounded-full md:p-4 md:bg-opacity-30 md:backdrop-blur-sm'>
           {navLinks.map((page) => (
-            <li key={page.href} className='text-lg'>
+            <li key={page.href} className='text-5xl md:text-lg mt-6 md-mt-0'>
               <Link href={page.href}>{page.name}</Link>
             </li>
           ))}
         </ul>
-        <div className='bg-white rounded-full bg-opacity-30 backdrop-blur-sm px-4 py-4'>
+        <div className='md:bg-white md:rounded-full md:bg-opacity-30 md:backdrop-blur-sm md:p-4'>
           {
-            <Link href='/cart' className='flex gap-2 text-lg'>
-              <ShoppingCart className='w-6 h-6' />
+            <Link
+              href='/cart'
+              className='flex gap-2 text-5xl md:text-lg mt-6 md-mt-0'
+            >
+              <ShoppingCart className='w-10 h-10 md:w-6 md:h-6' />
               Cart
             </Link>
           }

@@ -19,7 +19,7 @@ export default function Home() {
           y={-1}
           className='absolute  inset-0'
         />
-        <h1 className='w-full text-7xl lg:text-9xl max-w-[300px] px-2 lg:px-0 text-left lg:left-10 top-36 absolute lg:max-w-[500px] lg:leading-[100px]'>
+        <h1 className='w-full text-7xl  lg:text-9xl max-w-[300px] px-2 lg:px-0 text-left lg:left-10 top-36 absolute lg:max-w-[500px] leading-[55px] lg:leading-[100px]'>
           Digital Fashion is <br /> a new chapter
         </h1>
         <div className='hidden sm:w-full sm:flex justify-center absolute top-0 h-full'>
